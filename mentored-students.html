@@ -6,55 +6,161 @@
   <meta name="author" content="Zheyuan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    :root {
+      --page-max: 980px;
+      --ink: #1e2530;
+      --muted: #5a6472;
+      --card: #ffffff;
+      --line: #dfe4ec;
+      --accent: #1772d0;
+      --bg: #f4f7fb;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f7f9fc 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+
+    .wrap {
+      width: min(var(--page-max), calc(100% - 32px));
+      margin: 36px auto 56px auto;
+    }
+
+    .title {
+      margin: 0 0 18px 0;
+      font-size: 36px;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .subtitle {
+      margin: 0 0 24px 0;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 22px rgba(16, 24, 40, 0.06);
+    }
+
+    .section-card + .section-card {
+      margin-top: 16px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #edf1f6;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: 24px;
+      color: #0f172a;
+    }
+
+    .section-count {
+      font-size: 13px;
+      color: #334155;
+      background: #eef4ff;
+      border: 1px solid #dbeafe;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .student-list {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .student-list li {
+      font-size: 21px;
+      line-height: 1.45;
+      margin: 10px 0;
+      color: #111827;
+    }
+
+    .student-list strong {
+      font-size: 21px;
+      color: #0f172a;
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        width: calc(100% - 20px);
+        margin-top: 20px;
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      .section-title {
+        font-size: 22px;
+      }
+
+      .student-list li,
+      .student-list strong {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:24px 20px 40px 20px;">
-          <div style="font-size:36px;font-weight:700;margin-bottom:24px;">
-            Mentored Students
-          </div>
+  <div class="wrap">
+    <h1 class="title">Mentored Students</h1>
+    <p class="subtitle">Current and past mentees across undergraduate, master's, and PhD pathways.</p>
 
-          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
-            <tbody>
-              <tr style="vertical-align:top;">
-                <td style="width:180px;padding:0 16px 0 0;font-size:28px;font-weight:700;line-height:1.2;">
-                  Current<br>Students
-                </td>
-                <td style="padding:0;">
-                  <ul style="margin:0;padding-left:26px;font-size:36px;line-height:1.45;">
-                    <li><strong>Diancheng Kang</strong>, Undergraduate @ Southern University of Science and Technology (2026)</li>
-                    <li><strong>Baicheng Chen</strong>, Undergraduate @ CUHK, Shenzhen (2026)</li>
-                    <li><strong>Chenlu Ding</strong>, PhD Student @ University of Science and Technology of China (2026)</li>
-                    <li><strong>Yiru Wang</strong>, PhD Student @ CUHK, Hongkong (2025)</li>
-                    <li><strong>John Kim</strong>, Undergraduate @ Notre Dame -> CS PhD @ Northwestern University (NSF GRFP Fellowship) (2025)</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <section class="section-card">
+      <div class="section-header">
+        <h2 class="section-title">Current Students</h2>
+        <span class="section-count">5 students</span>
+      </div>
+      <ol class="student-list">
+        <li><strong>Diancheng Kang</strong>, Undergraduate @ Southern University of Science and Technology (2026)</li>
+        <li><strong>Baicheng Chen</strong>, Undergraduate @ CUHK, Shenzhen (2026)</li>
+        <li><strong>Chenlu Ding</strong>, PhD Student @ University of Science and Technology of China (2026)</li>
+        <li><strong>Yiru Wang</strong>, PhD Student @ CUHK, Hongkong (2025)</li>
+        <li><strong>John Kim</strong>, Undergraduate @ Notre Dame <span class="arrow">-></span> CS PhD @ Northwestern University (NSF GRFP Fellowship) (2025)</li>
+      </ol>
+    </section>
 
-          <table style="width:100%;border-collapse:collapse;">
-            <tbody>
-              <tr style="vertical-align:top;">
-                <td style="width:180px;padding:0 16px 0 0;font-size:28px;font-weight:700;line-height:1.2;">
-                  Former<br>Students
-                </td>
-                <td style="padding:0;">
-                  <ul style="margin:0;padding-left:26px;font-size:36px;line-height:1.45;">
-                    <li><strong>Katherine O'Roark</strong>, Undergraduate @ Saint Mary's College (2025)</li>
-                    <li><strong>Han Yan</strong>, Undergraduate @ CUHK -> CS PhD @ NYU Shanghai (2025)</li>
-                    <li><strong>Wenhan Wu</strong>, MS @ Wuhan University -> CS PhD @ Georgia Tech (2025)</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <section class="section-card">
+      <div class="section-header">
+        <h2 class="section-title">Former Students</h2>
+        <span class="section-count">3 students</span>
+      </div>
+      <ul class="student-list">
+        <li><strong>Katherine O'Roark</strong>, Undergraduate @ Saint Mary's College (2025)</li>
+        <li><strong>Han Yan</strong>, Undergraduate @ CUHK <span class="arrow">-></span> CS PhD @ NYU Shanghai (2025)</li>
+        <li><strong>Wenhan Wu</strong>, MS @ Wuhan University <span class="arrow">-></span> CS PhD @ Georgia Tech (2025)</li>
+      </ul>
+      <p class="note">Last updated: May 4, 2026</p>
+    </section>
+  </div>
 </body>
 </html>
