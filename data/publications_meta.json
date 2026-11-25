@@ -1,5 +1,5 @@
 {
-  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py. The Home page lists every accepted paper where Zheyuan Liu is first or equal-first author (\"preprint\": false); add \"home\": true or false to an entry to override that rule.",
+  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py. The Home page lists every accepted paper where Zheyuan Liu is first or equal-first author (\"preprint\": false); add \"home\": true or false to an entry to override that rule. On the Publications page, Selected always includes every paper where Zheyuan Liu is first or equal-first author, preprints included; \"selected\": true adds other papers to it.",
   "entries": {
     "covid": {
       "pillar": "other",
@@ -121,7 +121,7 @@
     },
     "liu2024machine": {
       "pillar": "knowledge",
-      "selected": false,
+      "selected": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {
@@ -331,7 +331,7 @@
     },
     "bai2026inferencetime": {
       "pillar": "response",
-      "selected": false,
+      "selected": true,
       "venue": "Preprint",
       "preprint": true,
       "links": {
@@ -377,7 +377,7 @@
     },
     "chen2026forgotten": {
       "pillar": "knowledge",
-      "selected": false,
+      "selected": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {
@@ -415,7 +415,7 @@
     },
     "zhang2026strength": {
       "pillar": "response",
-      "selected": false,
+      "selected": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {
@@ -433,7 +433,7 @@
     },
     "cui2026learning": {
       "pillar": "action",
-      "selected": false,
+      "selected": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {
@@ -479,7 +479,7 @@
     },
     "liu2026teachingvlastop": {
       "pillar": "action",
-      "selected": false,
+      "selected": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {

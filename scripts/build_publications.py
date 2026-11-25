@@ -7,7 +7,8 @@ Sources (edit these, never the generated HTML):
                                thumbnail, links, notes
 
 Output: the blocks between <!-- PUBS:START --> and <!-- PUBS:END --> in
-  publications.html  (all entries)
+  publications.html  (all entries. "Selected" = every paper with Zheyuan Liu as first or equal-first author,
+                      preprints included, plus the entries marked "selected": true in the metadata.)
   index.html         (accepted papers with Zheyuan Liu as first or equal-first author; no topic tags.
                       An entry's "home": true/false in the metadata overrides the rule.)
 
@@ -67,6 +68,12 @@ def parse_bib(text):
     return entries
 
 
+def lead_author(entry):
+    """Zheyuan Liu is the first author or an equal-contribution (starred) author."""
+    authors = entry["authors"]
+    return bool(authors) and (authors[0]["me"] or any(a["me"] and a["star"] for a in authors))
+
+
 def render(entry, meta, tags=True):
     e = html.escape
     key = entry["key"]
@@ -103,7 +110,7 @@ def render(entry, meta, tags=True):
         row.append(f'<span class="extra">{e(meta["extra"])}</span>')
 
     classes = "pub" if thumb else "pub nothumb"
-    selected = "true" if meta.get("selected") else "false"
+    selected = "true" if meta.get("selected") or lead_author(entry) else "false"
     out = [f'    <article class="{classes}" id="{e(key)}" data-topic="{topic}" data-selected="{selected}">']
     out.append(f'      <div class="pub-meta">{"".join(head)}</div>')
     if thumb:
@@ -124,10 +131,6 @@ def build():
     missing = [x["key"] for x in entries if x["key"] not in meta]
     if missing:
         sys.exit(f"No entry in {META.name} for: {', '.join(missing)}")
-
-    def lead_author(entry):
-        authors = entry["authors"]
-        return bool(authors) and (authors[0]["me"] or any(a["me"] and a["star"] for a in authors))
 
     def sort_key(pair):
         index, entry = pair
