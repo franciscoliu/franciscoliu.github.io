@@ -7,8 +7,8 @@ Sources (edit these, never the generated HTML):
                                thumbnail, links, notes
 
 Output: the blocks between <!-- PUBS:START --> and <!-- PUBS:END --> in
-  publications.html  (all entries. "Selected" = every paper with Zheyuan Liu as first or equal-first author,
-                      preprints included, plus the entries marked "selected": true in the metadata.)
+  publications.html  (all entries. "Selected" follows each entry's "selected": true/false in the metadata;
+                      an entry without that field is selected when Zheyuan Liu is first or equal-first author.)
   index.html         (accepted papers with Zheyuan Liu as first or equal-first author; no topic tags.
                       An entry's "home": true/false in the metadata overrides the rule.)
 
@@ -110,7 +110,7 @@ def render(entry, meta, tags=True):
         row.append(f'<span class="extra">{e(meta["extra"])}</span>')
 
     classes = "pub" if thumb else "pub nothumb"
-    selected = "true" if meta.get("selected") or lead_author(entry) else "false"
+    selected = "true" if meta.get("selected", lead_author(entry)) else "false"
     out = [f'    <article class="{classes}" id="{e(key)}" data-topic="{topic}" data-selected="{selected}">']
     out.append(f'      <div class="pub-meta">{"".join(head)}</div>')
     if thumb:

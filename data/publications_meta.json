@@ -1,5 +1,5 @@
 {
-  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py. The Home page lists every accepted paper where Zheyuan Liu is first or equal-first author (\"preprint\": false); add \"home\": true or false to an entry to override that rule. On the Publications page, Selected always includes every paper where Zheyuan Liu is first or equal-first author, preprints included; \"selected\": true adds other papers to it.",
+  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py. The Home page lists every accepted paper where Zheyuan Liu is first or equal-first author (\"preprint\": false); add \"home\": true or false to an entry to override that rule. On the Publications page, an entry without a \"selected\" field is in Selected when Zheyuan Liu is its first or equal-first author (preprints included); \"selected\": true or false overrides that, e.g. false keeps the two first-author surveys out.",
   "entries": {
     "covid": {
       "pillar": "other",
@@ -121,7 +121,7 @@
     },
     "liu2024machine": {
       "pillar": "knowledge",
-      "selected": true,
+      "selected": false,
       "venue": "arXiv",
       "preprint": true,
       "links": {
@@ -331,7 +331,7 @@
     },
     "bai2026inferencetime": {
       "pillar": "response",
-      "selected": true,
+      "selected": false,
       "venue": "Preprint",
       "preprint": true,
       "links": {
@@ -382,7 +382,8 @@
       "preprint": true,
       "links": {
         "Paper": "https://arxiv.org/abs/2608.21544"
-      }
+      },
+      "thumb": "images/atu.png"
     },
     "liu2026knowledge": {
       "pillar": "action",
@@ -420,7 +421,8 @@
       "preprint": true,
       "links": {
         "Paper": "https://arxiv.org/abs/2610.26489"
-      }
+      },
+      "thumb": "images/strength_controls.png"
     },
     "huang2026epi": {
       "pillar": "action",
@@ -438,7 +440,8 @@
       "preprint": true,
       "links": {
         "Paper": "https://arxiv.org/abs/2609.39820"
-      }
+      },
+      "thumb": "images/failbank.png"
     },
     "phan2026cheatbench": {
       "pillar": "action",
@@ -484,7 +487,8 @@
       "preprint": true,
       "links": {
         "Paper": "https://arxiv.org/abs/2611.26239"
-      }
+      },
+      "thumb": "images/safi.png"
     }
   }
 }
