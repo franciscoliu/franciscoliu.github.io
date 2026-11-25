@@ -1,0 +1,496 @@
+{
+  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py",
+  "entries": {
+    "covid": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "medRxiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://doi.org/10.1101/2021.01.04.21249218"
+      }
+    },
+    "GraphBert": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "ICDM",
+      "preprint": false,
+      "links": {
+        "Paper": "https://ieeexplore.ieee.org/abstract/document/10027673/"
+      },
+      "thumb": "images/Graphbert.jpg"
+    },
+    "Chasing": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "ICLR",
+      "preprint": false,
+      "links": {}
+    },
+    "gfame": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "WWW",
+      "preprint": false,
+      "links": {
+        "Paper": "https://dl.acm.org/doi/abs/10.1145/3543507.3583207",
+        "Code": "https://github.com/franciscoliu/GFAME"
+      },
+      "thumb": "images/gfame.jpg"
+    },
+    "trilemma": {
+      "pillar": "knowledge",
+      "selected": true,
+      "venue": "WWW",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2310.18574"
+      },
+      "thumb": "images/conMU.jpg"
+    },
+    "graphprompt": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "WWW (Short)",
+      "preprint": false,
+      "links": {
+        "Paper": "https://dl.acm.org/doi/abs/10.1145/3589335.3651476",
+        "Code": "https://github.com/franciscoliu/graphprompter"
+      },
+      "thumb": "images/graphprompter.jpg"
+    },
+    "graphquantum": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "DAC",
+      "preprint": false,
+      "links": {}
+    },
+    "liu2024towards": {
+      "pillar": "knowledge",
+      "selected": true,
+      "home": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2402.10058",
+        "Code": "https://github.com/franciscoliu/SKU"
+      },
+      "thumb": "images/SKU.png"
+    },
+    "tan2024democratizing": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "EMNLP",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2402.04401"
+      },
+      "thumb": "images/OPPU.png"
+    },
+    "UGMAE": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "AAAI",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2402.08023"
+      },
+      "thumb": "images/ACE_GSL.jpg"
+    },
+    "dou2024avoiding": {
+      "pillar": "knowledge",
+      "selected": true,
+      "venue": "NAACL (Findings)",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2406.10952"
+      },
+      "thumb": "images/ssu.png",
+      "title": "Avoiding Copyright Infringement via Large Language Model Unlearning"
+    },
+    "tan2024personalized": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "EMNLP",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2406.10471"
+      },
+      "thumb": "images/Per-Pcs.png"
+    },
+    "liu2024machine": {
+      "pillar": "knowledge",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2407.20516"
+      }
+    },
+    "liu2024protecting": {
+      "pillar": "knowledge",
+      "selected": true,
+      "home": true,
+      "venue": "NAACL",
+      "preprint": false,
+      "note": "Oral",
+      "stat": "14K+ downloads",
+      "stat_title": "Hugging Face dataset downloads, as of November 2026",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2410.22108",
+        "Code": "https://github.com/franciscoliu/MLLMU-Bench",
+        "Dataset": "https://huggingface.co/datasets/MLLMMU/MLLMU-Bench"
+      },
+      "thumb": "images/mllmu-bench.png"
+    },
+    "yang2024cliperase": {
+      "pillar": "knowledge",
+      "selected": false,
+      "venue": "ACL",
+      "preprint": false,
+      "links": {}
+    },
+    "liu2024disentangling": {
+      "pillar": "knowledge",
+      "selected": true,
+      "home": true,
+      "venue": "ACL",
+      "preprint": false,
+      "note": "Oral, Top 8%",
+      "links": {
+        "Paper": "https://aclanthology.org/2025.acl-long.305/"
+      },
+      "thumb": "images/SDU.jpg",
+      "extra": "U.S. patent pending"
+    },
+    "ni2025towards": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "ACM CSUR",
+      "preprint": false,
+      "links": {
+        "Paper": "https://doi.org/10.1145/3837074"
+      }
+    },
+    "liu2025modality": {
+      "pillar": "knowledge",
+      "selected": true,
+      "venue": "ACL",
+      "preprint": false,
+      "links": {
+        "Paper": "https://www.arxiv.org/abs/2502.15910",
+        "Code": "https://github.com/franciscoliu/MANU"
+      },
+      "thumb": "images/MANU.jpg"
+    },
+    "yuan2025superficial": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "EMNLP",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2503.02103"
+      },
+      "thumb": "images/IMM.png"
+    },
+    "wang2025graph": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2505.15116"
+      }
+    },
+    "xu2025incorporating": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "MICCAI",
+      "preprint": false,
+      "links": {}
+    },
+    "tan2025can": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2501.13391"
+      }
+    },
+    "zhang2025knowing": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "EMNLP (Findings)",
+      "preprint": false,
+      "links": {}
+    },
+    "liu2025steering": {
+      "pillar": "response",
+      "selected": true,
+      "home": true,
+      "venue": "EMNLP",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2509.19212v1",
+        "Code": "https://github.com/franciscoliu/SafeCoDe"
+      },
+      "thumb": "images/safecode.png"
+    },
+    "han2026dual": {
+      "pillar": "knowledge",
+      "selected": true,
+      "venue": "ICLR",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2509.23362"
+      },
+      "thumb": "images/PRISM.jpg"
+    },
+    "wu2025beyond": {
+      "pillar": "knowledge",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2509.20230"
+      }
+    },
+    "tan2025instant": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "ACL",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2510.16282"
+      },
+      "thumb": "images/p_to_p.png"
+    },
+    "jia2025autorubric": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {},
+      "thumb": "images/autorubric.png"
+    },
+    "liu2026mtmcs": {
+      "pillar": "response",
+      "selected": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2601.06757",
+        "Code": "https://github.com/franciscoliu/MTMCS-Bench"
+      },
+      "thumb": "images/mtmcs_bench.png"
+    },
+    "diao2026addressing": {
+      "pillar": "other",
+      "selected": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {
+        "Paper": "https://www.catalyzex.com/paper/addressing-overthinking-in-large-vision"
+      },
+      "thumb": "images/GPRO.png"
+    },
+    "mo2026opendecoder": {
+      "pillar": "response",
+      "selected": true,
+      "venue": "WWW",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2601.09028"
+      },
+      "thumb": "images/opendecoder.jpg"
+    },
+    "xiang2026behavior": {
+      "pillar": "action",
+      "selected": true,
+      "venue": "ACL",
+      "preprint": false,
+      "links": {},
+      "thumb": "images/RAM.png"
+    },
+    "sarwar2026multimodalunlearning": {
+      "pillar": "knowledge",
+      "selected": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {
+        "Paper": "http://hdl.handle.net/11603/41605"
+      },
+      "thumb": "images/MLLM_MU_Survey.png"
+    },
+    "liu2026reflective": {
+      "pillar": "action",
+      "selected": true,
+      "home": true,
+      "venue": "ACL (Findings)",
+      "preprint": false,
+      "links": {},
+      "thumb": "images/self_reflective_bench.png"
+    },
+    "bai2026inferencetime": {
+      "pillar": "response",
+      "selected": false,
+      "venue": "Preprint",
+      "preprint": true,
+      "links": {
+        "Paper": "https://doi.org/10.20944/preprints202605.1041.v1"
+      }
+    },
+    "ding2026teaching": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2605.14636"
+      }
+    },
+    "kang2026prompt": {
+      "pillar": "response",
+      "selected": true,
+      "home": true,
+      "venue": "NeurIPS",
+      "preprint": false,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2605.10664"
+      },
+      "thumb": "images/gcad.png"
+    },
+    "xu2026autolab": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2606.05080"
+      }
+    },
+    "meng20263deditsafe": {
+      "pillar": "response",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2605.15398"
+      }
+    },
+    "chen2026forgotten": {
+      "pillar": "knowledge",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2608.21544"
+      }
+    },
+    "liu2026knowledge": {
+      "pillar": "action",
+      "selected": true,
+      "home": true,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2608.26372",
+        "Code": "https://github.com/franciscoliu/KnownLieBench"
+      },
+      "thumb": "images/knownliebench.png"
+    },
+    "huang2026memoharness": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2607.14159"
+      }
+    },
+    "zhang2026training": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2610.26461"
+      }
+    },
+    "zhang2026strength": {
+      "pillar": "response",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2610.26489"
+      }
+    },
+    "huang2026epi": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2610.24944"
+      }
+    },
+    "cui2026learning": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2609.39820"
+      }
+    },
+    "phan2026cheatbench": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2609.36308"
+      }
+    },
+    "huang2026reward": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2609.28614"
+      }
+    },
+    "phan2025humanity": {
+      "pillar": "other",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2501.14249"
+      },
+      "extra": "Contributor"
+    },
+    "huang2026rsiarena": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2610.33624"
+      }
+    },
+    "liu2026teachingvlastop": {
+      "pillar": "action",
+      "selected": false,
+      "venue": "arXiv",
+      "preprint": true,
+      "links": {
+        "Paper": "https://arxiv.org/abs/2611.26239"
+      }
+    }
+  }
+}
