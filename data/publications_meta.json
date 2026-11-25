@@ -1,5 +1,5 @@
 {
-  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py",
+  "_comment": "Website-only data for each publication, keyed by the BibTeX key in data/publications.bib. Edit here, then run: python3 scripts/build_publications.py. The Home page lists every accepted paper where Zheyuan Liu is first or equal-first author (\"preprint\": false); add \"home\": true or false to an entry to override that rule.",
   "entries": {
     "covid": {
       "pillar": "other",
@@ -57,7 +57,8 @@
         "Paper": "https://dl.acm.org/doi/abs/10.1145/3589335.3651476",
         "Code": "https://github.com/franciscoliu/graphprompter"
       },
-      "thumb": "images/graphprompter.jpg"
+      "thumb": "images/graphprompter.jpg",
+      "title": "Can we Soft Prompt LLMs for Graph Learning Tasks?"
     },
     "graphquantum": {
       "pillar": "other",
@@ -69,7 +70,6 @@
     "liu2024towards": {
       "pillar": "knowledge",
       "selected": true,
-      "home": true,
       "venue": "ACL (Findings)",
       "preprint": false,
       "links": {
@@ -131,7 +131,6 @@
     "liu2024protecting": {
       "pillar": "knowledge",
       "selected": true,
-      "home": true,
       "venue": "NAACL",
       "preprint": false,
       "note": "Oral",
@@ -154,7 +153,6 @@
     "liu2024disentangling": {
       "pillar": "knowledge",
       "selected": true,
-      "home": true,
       "venue": "ACL",
       "preprint": false,
       "note": "Oral, Top 8%",
@@ -229,7 +227,6 @@
     "liu2025steering": {
       "pillar": "response",
       "selected": true,
-      "home": true,
       "venue": "EMNLP",
       "preprint": false,
       "links": {
@@ -327,7 +324,6 @@
     "liu2026reflective": {
       "pillar": "action",
       "selected": true,
-      "home": true,
       "venue": "ACL (Findings)",
       "preprint": false,
       "links": {},
@@ -354,7 +350,6 @@
     "kang2026prompt": {
       "pillar": "response",
       "selected": true,
-      "home": true,
       "venue": "NeurIPS",
       "preprint": false,
       "links": {
@@ -392,7 +387,6 @@
     "liu2026knowledge": {
       "pillar": "action",
       "selected": true,
-      "home": true,
       "venue": "arXiv",
       "preprint": true,
       "links": {

@@ -8,7 +8,8 @@ Sources (edit these, never the generated HTML):
 
 Output: the blocks between <!-- PUBS:START --> and <!-- PUBS:END --> in
   publications.html  (all entries)
-  index.html         (entries with "home": true)
+  index.html         (accepted papers with Zheyuan Liu as first or equal-first author; no topic tags.
+                      An entry's "home": true/false in the metadata overrides the rule.)
 
 Usage:
   python3 scripts/build_publications.py           rewrite the two pages
@@ -66,7 +67,7 @@ def parse_bib(text):
     return entries
 
 
-def render(entry, meta):
+def render(entry, meta, tags=True):
     e = html.escape
     key = entry["key"]
     title = meta.get("title") or entry["title"]
@@ -90,7 +91,7 @@ def render(entry, meta):
     )
 
     row = []
-    if topic in TOPICS:
+    if tags and topic in TOPICS:
         cls, label = TOPICS[topic]
         row.append(f'<span class="tag {cls}">{label}</span>')
     for label, url in links.items():
@@ -124,15 +125,24 @@ def build():
     if missing:
         sys.exit(f"No entry in {META.name} for: {', '.join(missing)}")
 
+    def lead_author(entry):
+        authors = entry["authors"]
+        return bool(authors) and (authors[0]["me"] or any(a["me"] and a["star"] for a in authors))
+
     def sort_key(pair):
         index, entry = pair
         m = meta[entry["key"]]
-        first = bool(entry["authors"]) and (entry["authors"][0]["me"] or any(a["me"] and a["star"] for a in entry["authors"]))
-        return (-int(entry["year"] or 0), bool(m.get("preprint")), not first, index)
+        return (-int(entry["year"] or 0), bool(m.get("preprint")), not lead_author(entry), index)
+
+    def on_home(entry):
+        m = meta[entry["key"]]
+        if "home" in m:
+            return bool(m["home"])
+        return lead_author(entry) and not m.get("preprint")
 
     ordered = [entry for _, entry in sorted(enumerate(entries), key=sort_key)]
     all_html = "\n\n".join(render(x, meta[x["key"]]) for x in ordered)
-    home_html = "\n\n".join(render(x, meta[x["key"]]) for x in ordered if meta[x["key"]].get("home"))
+    home_html = "\n\n".join(render(x, meta[x["key"]], tags=False) for x in ordered if on_home(x))
     return {"publications.html": all_html, "index.html": home_html}, len(ordered)
 
 
