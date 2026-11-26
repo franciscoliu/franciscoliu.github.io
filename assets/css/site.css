@@ -126,7 +126,6 @@ h2.sec + h3.sub{margin-top:0}
 .people{margin:0;padding-left:22px}
 .people li{margin:8px 0}
 .people small{display:block;color:var(--muted);font-size:14px}
-.map{margin-top:14px;max-width:320px}
 
 footer{border-top:1px solid var(--line);margin-top:56px;padding:22px 0 40px;color:var(--muted);font-size:14px}
 
